@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <link href="../assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
@@ -12,59 +12,129 @@
 
   <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
-<body>
+<body class="min-h-screen">
 
-<!--<div class="bg-gradient-pink-orange h-[100px] w-80"></div>-->
-<!--<div class="bg-gradient-blue-pink h-[100px] w-80"></div>-->
-<header>
-  Get Started
+<header class="mobile:mx-4 tablet:mx-10 mobile:my-4 tablet:mt-6 tablet:mr-0 grid min-h-screen tablet:grid-cols-2 items-center mobile:gap-10 tablet:overflow-hidden laptop:ml-[165px]">
+  <div class="tablet:col-span-2 tablet:col-start-1 flex items-center tablet:pr-10 laptop:pr-[165px]">
+    <span class="text-2s font-extra-bold text-dark-blue">skilled</span>
+    <button class="laptop:z-10 ml-auto text-white mobile:w-[140px] mobile:h-[48px] laptop:w-[167px] laptop:h-[56px] bg-dark-blue hover:bg-slate-blue">Get Started</button>
+  </div>
+  
+  <div class="laptop:self-start laptop:mt-[185px]">
+    <h1 class="mobile:mb-8 text-heading-l text-dark-blue laptop:text-heading-xl">
+      Maximize skill, minimize budget
+    </h1>
 
-  Maximize skill, minimize budget
+    <p class="mobile:mb-4 text-cool-gray">
+      Our modern courses across a range of in-demand skills will give you the
+      knowledge you need to live the life you want.
+    </p>
 
-  Our modern courses across a range of in-demand skills will give you the
-  knowledge you need to live the life you want.
+    <button class="text-white mobile:w-[167px] mobile:h-[56px] laptop:h-[63px] bg-gradient-pink-orange hover:bg-gradient-pink-orange-pale">
+      Get Started
+    </button>
+  </div>
 
-  Get Started
+  <img alt="Hero image" class="tablet:hidden w-[327px] h-[301px]" src="assets/image-hero-mobile@2x.webp">
+
+  <picture class="relative max-tablet:hidden laptop:hidden overflow-hidden w-[640px] h-[640px]">
+    <img alt="hero image" class="absolute top-[-14%] right-[8%]" src="assets/image-hero-tablet@2x.webp">
+  </picture>
+
+  <picture class="relative laptop:z-0 max-laptop:hidden w-[991px] h-[936px]">
+    <img alt="hero image" class="absolute top-[-24%] right-[4%]" src="assets/image-hero-desktop@2x.webp">
+  </picture>
+
 </header>
 
-<main>
-  <p>
+<main class="mx-4 laptop:mx-[165px] tablet:mx-10 mobile:mb-20 tablet:mb-[86px] laptop:mb-[140px] grid tablet:grid-cols-2 laptop:grid-cols-3 laptop:gap-y-14 laptop:gap-x-8 mobile:gap-4 tablet:gap-y-8 mt-[66px]">
+  <p class="rounded-xl mobile:px-8 tablet:py-6 mobile:py-6 tablet:pt-14 laptop:pt-16 laptop:px-8 text-white mobile:w-[343px] mobile:h-[120px] tablet:w-[339px] tablet:h-[259px] laptop:w-[350px] laptop:h-[322px] bg-gradient-pink-orange text-heading-s laptop:text-heading-m">
     Check out our most popular courses!
   </p>
 
-  <div>
-    Animation
-    Learn the latest animation techniques to create stunning motion
-    design and captivate your audience.
-    Get Started
+  <div class="feature">
+    <img alt="icon animation" class="svg-icon" src="assets/icon-animation.svg">
+
+    <div class="laptop:mb-14">
+      <p class="mobile:text-[20px] laptop:text-heading-s text-dark-blue font-extra-bold">Animation</p>
+      <p class="text-cool-gray text-[16px]">Learn the latest animation techniques to create stunning motion
+        design and captivate your audience.
+      </p>
+
+    </div>
+
+    <a href="#">
+      Get Started
+    </a>
+
   </div>
 
-  <div>
-    Design
-    Create beautiful, usable interfaces to help shape the future of
-    how the web looks.
-    Get Started
+  <div class="feature">
+    <img alt="icon design" class="svg-icon" src="assets/icon-design.svg">
+
+    <div class="laptop:mb-14">
+      <p class="mobile:text-[20px] laptop:text-heading-s text-dark-blue font-extra-bold">
+        Design
+      </p>
+
+      <p class="text-cool-gray text-[16px] laptop:text-body-m">
+        Create beautiful, usable interfaces to help shape the future of
+        how the web looks.
+      </p>
+    </div>
+
+    <a href="#">
+      Get Started
+    </a>
+
   </div>
 
-  <div>
-    Photography
-    Explore critical fundamentals like lighting, composition, and focus
-    to capture exceptional photos.
-    Get Started
+  <div class="feature">
+    <img alt="icon photography" class="svg-icon" src="assets/icon-photography.svg">
+
+    <div class="laptop:mb-14">
+      <p class="mobile:text-[20px] laptop:text-heading-s text-dark-blue font-extra-bold">Photography</p>
+      <p class="text-cool-gray text-[16px] laptop:text-body-m">
+        Explore critical fundamentals like lighting, composition, and focus
+        to capture exceptional photos.
+      </p>
+    </div>
+
+
+    <a href="#">
+      Get Started
+    </a>
   </div>
 
-  <div>
-    Crypto
-    All you need to know to get started investing in crypto. Go from beginner
-    to advanced with this 54 hour course.
-    Get Started
+  <div class="feature">
+    <img alt="icon crypto" class="svg-icon" src="assets/icon-crypto.svg">
+
+    <div class="laptop:mb-14">
+      <p class="mobile:text-[20px] laptop:text-heading-s text-dark-blue font-extra-bold">Crypto</p>
+      <p class="text-cool-gray text-[16px] laptop:text-body-m">
+        All you need to know to get started investing in crypto. Go from beginner
+        to advanced with this 54 hour course.
+      </p>
+    </div>
+
+    <a href="#">
+      Get Started
+    </a>
   </div>
 
-  <div>
-    Business
-    A step-by-step playbook to help you start, scale, and sustain your business
-    without outside investment.
-    Get Started
+  <div class="feature">
+    <img alt="icon business" class="svg-icon" src="assets/icon-business.svg">
+    <div class="laptop:mb-14">
+      <p class="mobile:text-[20px] laptop:text-heading-s text-dark-blue font-extra-bold">Business</p>
+      <p class="text-cool-gray text-[16px] laptop:text-body-m">
+        A step-by-step playbook to help you start, scale, and sustain your business
+        without outside investment.
+      </p>
+    </div>
+
+    <a href="#">
+      Get Started
+    </a>
   </div>
 </main>
 

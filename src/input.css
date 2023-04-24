@@ -6,4 +6,22 @@
     body{
         @apply font-plus-jakarta text-body-m
     }
+
+    button{
+        @apply text-body-s rounded-3xl
+    }
+
+    a{
+        @apply text-deep-pink font-bold hover:text-cotton-candy
+    }
+}
+
+@layer components {
+    .feature{
+        @apply flex flex-col mobile:gap-6 laptop:gap-8
+    }
+
+    .svg-icon{
+        @apply w-[56px] h-[56px]
+    }
 }
