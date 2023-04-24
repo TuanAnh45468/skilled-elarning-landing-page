@@ -36,6 +36,8 @@ module.exports = {
           "linear-gradient(to bottom, #FFB6A3 0%, #F78FB3 100%)",
         "gradient-blue-pink":
           "linear-gradient(to bottom, #4851FF 0%, #F02AA6 100%)",
+        "gradient-blue-pink-pale":
+          "linear-gradient(to bottom, rgba(72, 81, 255, 0.5) 0%, rgba(240, 42, 166, 0.5) 100%)",
       },
       fontFamily: { "plus-jakarta": ["Plus Jakarta Sans", "sans-serif"] },
       fontWeight: { medium: 500, bold: 700, "extra-bold": 800 },
